@@ -1,0 +1,264 @@
+/* libre-franklin-regular - latin */
+@font-face {
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Libre Franklin'), local('LibreFranklin-Regular'),
+         url('../fonts/libre-franklin-v4-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/libre-franklin-v4-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* libre-franklin-500 - latin */
+  @font-face {
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Libre Franklin Medium'), local('LibreFranklin-Medium'),
+         url('../fonts/libre-franklin-v4-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/libre-franklin-v4-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* libre-franklin-700 - latin */
+  @font-face {
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Libre Franklin Bold'), local('LibreFranklin-Bold'),
+         url('../fonts/libre-franklin-v4-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/libre-franklin-v4-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  @font-face {font-family: "Segoe MDL2 Assets";
+    src: url("4f1c0acc06ffec914158fe07e208b731.eot"); /* IE9*/
+    src: url("4f1c0acc06ffec914158fe07e208b731.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("4f1c0acc06ffec914158fe07e208b731.woff2") format("woff2"), /* chrome、firefox */
+    url("4f1c0acc06ffec914158fe07e208b731.woff") format("woff"), /* chrome、firefox */
+    url("4f1c0acc06ffec914158fe07e208b731.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("4f1c0acc06ffec914158fe07e208b731.svg#Segoe MDL2 Assets") format("svg"); /* iOS 4.1- */
+  }
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+  font-family: 'LibreFranklin';
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: normal;
+}
+.wrapper{
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 1107px;
+  height: 100%;
+              }
+.row{
+  display: flex;
+  flex-flow: row wrap;
+}
+  /*header styles start*/
+.header-row {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    color: #FFFFFF;
+}
+  .header__bg {
+    width: 100%;
+    height: 100vh;
+    background-image: url("img/porto-bg.jpg");  
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+  .header__nav{
+      display: flex;
+      flex-flow: row wrap;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-top: 93px;
+  }
+  .header__list{
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: 160px;
+  }
+  .header__link{
+      font-size: 18px;
+      line-height: 24px;
+      margin-right: 80px;
+      color: #FFFFFF;
+      text-decoration: none;
+  }
+  .header__logo{
+    width: 116px;
+    margin-left: 120px;
+  }
+  .block__title{
+    display: flex;
+    flex-flow: column;
+  }
+  .header__title{
+    width: 694px;
+    height: 78px;
+    font-family: Libre Franklin;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 78px;
+}
+  .header__subtitle{
+    width: 333px;
+    height: 29px;
+    font-family: Libre Franklin;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+}
+  /*header styles end*/
+
+  /*about styles start*/
+.about-row{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    width: 100%;
+    height: 600px;
+}
+
+  .title{
+    margin-left: 0;
+    padding-top: 81px;
+}
+  .about__text{
+    text-align: left;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  /*about styles end*/
+
+  /*skills styles start*/
+  .skills-row{
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      width: 100%;
+      height: 693px;
+  }
+  .skills__img{
+    width: 350px;
+    height: 340px;
+    margin-top: 250px;
+  }
+  .progressbar{
+      display: flex;
+      width: 200px;
+      height: 340px;
+      flex-flow: column;
+      margin-top: 280px;
+  }
+  .progressbar1{
+    display: flex;
+    width: 400px;
+    height: 340px;
+    flex-flow: column;
+    margin-top: 280px;
+  }
+  progress{
+      display: flex;
+      background: #C66C49;
+  }
+  progress::-webkit-progress-bar{
+      width: 350px;
+      height: 24px;
+      background: #F5D6AB;
+  }
+  progress::-webkit-progress-value {
+      background: #C66C49;
+  }
+  .top{
+    margin-top: 2px;
+    margin-bottom: 0;
+  }
+  /*skills styles end*/
+
+  /*portfolio styles start*/
+  .portfolio-row{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 822px;
+  }
+  .port__link{
+    margin-top: 200px;
+  }
+  .text{
+    display: flex;
+    width: 349px;
+    height: 137px;
+    margin-left: 0;
+    margin-top: -450px;
+  }
+  .bac-to-top-link{
+    width: 62px;
+    height: 24px;
+    border: 2px solid black;
+  }
+  .block-img{
+      display: flex;
+      width: 650px;
+      height: 450px;
+      margin-top: 300px;
+      flex-flow: column;
+  }
+  .block-img1{
+      display: flex;
+      height: 225px;
+      justify-content: space-between;
+  }
+  .block-img2{
+      display: flex;
+      height: 225px;
+      justify-content: space-between;
+      align-items: flex-end;
+  }
+  /*portfolio styles end*/
+
+  /*contact styles start*/
+  .contact-row{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      height: 528px;
+  }
+  .container{
+      display: flex;
+      width: 950px;
+      flex-flow: row wrap;
+      justify-content: space-between;
+  }
+  .portfolio__link{
+      display: flex;
+      flex-flow: column;
+  }
+  .network{
+      display: flex;
+      flex-flow: column;
+  }
+  .email{
+      display: flex;
+      flex-flow: column;
+  }
+  /*contact styles end*/
+
+  
+
+
+
+  
